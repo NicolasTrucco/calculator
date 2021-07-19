@@ -1,0 +1,128 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    justify-content: center;
+    background-color: #FFCF00;
+}
+
+.calculator-wrapper  {
+    background-color: red;
+    /* display: grid;
+    flex-direction: column; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 475px;
+    width: 475px;   
+    border-radius: 30px;
+
+    
+}
+
+.display-wrapper  {
+    background-color: #00AEED;
+    display: grid;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 125px;
+    width: 475px;   
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+}
+
+.display  {
+    background-color: #BABABA;
+    display: grid;
+    justify-content: flex-end;
+    height: 60px;
+    width: 415px;   
+    border-radius: 10px;
+    margin: 30px;
+    align-items: center;
+    padding: 10px;
+    font-size: 40px;
+
+    
+}
+
+.zero {
+    grid-area: zero;
+}
+.one {
+    grid-area: one;
+}
+.two {
+    grid-area: two;
+}
+.three {
+    grid-area: three;
+}
+.four {
+    grid-area: four;
+}
+.five {
+    grid-area: five;
+}
+.six {
+    grid-area: six;
+}
+.seven {
+    grid-area: seven;
+}
+.eight {
+    grid-area: eight;
+}
+.nine {
+    grid-area: nine;
+}
+.dot {
+    grid-area: dot;
+}
+.c {
+    grid-area: c;
+}
+.add {
+    grid-area: add;
+}
+.subtract {
+    grid-area: subtract;
+}
+.divide {
+    grid-area: divide;
+}
+.multiply {
+    grid-area: multiply;
+}
+.equal {
+    grid-area: equal;
+}
+
+
+.buttons-wrapper  {
+    background-color: #DADADA;
+    display: grid;
+    margin-top: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    
+    grid-template-areas:"clear clear clear delete"
+                        "seven eight nine divide"
+                        "four five six multiply"
+                        "one two three subtract"
+                        "zero dot equal add";
+    grid-gap: 10px 20px; 
+    padding: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height:350px;
+
+    
+} 
+
+.buttons-wrapper button  {
+    font-size: 20px;
+    
+} 
