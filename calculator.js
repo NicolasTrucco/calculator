@@ -1,12 +1,4 @@
-let calculator = {
-    display: 0,
-    currentNumber: 0,
-    previousNumber:0,
-    result:0,
-}
-
 let display = '';
-let displayValue = document.getElementById('display');
 let operation = 'add';
 let previousNumber = 0;
 let currentNumber = 0;
